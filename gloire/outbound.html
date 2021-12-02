@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://getbootstrap.com/docs/5.1/components/navbar/" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <title>Outbond</title>
+  </head>
+  
+  <body>
+        <!--navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success bg-gradient">
+          <div class="container-fluid">
+            <a class="navbar-brand text-light" style="font-family: Garamond" href="about.html">
+              <img src="img/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+              Quart de` Gloire
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="nav nav-tabs" class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  
+                    <!-- Modal -->
+                  <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#modalForm">Login</a>
+                  <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-success">
+                                <h5 class="modal-title text-white" id="exampleModalLabel">Login</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label class="form-label">Email Address</label>
+                                        <input type="text" class="form-control" id="username" name="address" placeholder="Username" />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" />
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="rememberMe" />
+                                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                                    </div>
+                                    <div class="modal-footer d-block">
+                                        <p class="float-start">Don't Have Account? <a href="#" data-bs-toggle="modal" data-bs-target="#modalSign">Sign Up</a></p>
+                                        <button type="submit" class="btn btn-warning float-end">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="modal fade" id="modalSign" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-success">
+                                <h5 class="modal-title text-white" id="exampleModalLabel">Register</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Your Name" />
+                                    </div>
+                                    <div class="mb-3">
+                                      <label class="form-label">Phone Number</label>
+                                      <input type="tel" class="form-control" id="phonenumber" name="phonenumber" placeholder="+62-812-3456-7890" />
+                                  </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Email Address</label>
+                                        <input type="text" class="form-control" id="username" name="address" placeholder="Username" />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" />
+                                    </div>
+                                    <div class="modal-footer d-block">
+                                        <p class="float-start">Already Have Account? <a href="#" data-bs-toggle="modal" data-bs-target="#modalForm">Login</a></p>
+                                        <button type="submit" class="btn btn-warning float-end">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="destination.html">Destination</a>
+                </li>
+              
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Special Offer
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="specialoffer.html">Room & Suites</a></li>
+                    <li><a class="dropdown-item" href="specialoffer.html">Fasilities</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-success active" aria-current="page" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Event
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="meeting.html">Meeting</a></li>
+                    <li><a class="dropdown-item" href="wedding.html">Wedding</a></li>
+                    <li><a class="dropdown-item" href="outbound.html">Outbound</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="about.html">About Us</a>
+                </li>
+              </ul>
+            </div>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-warning text-light" type="submit">Search</button>
+              </form>
+          </div>
+        </nav>
+
+    <!--carousel--> 
+ <div>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>    
+            </div>    
+            
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="img/outbound1.jpg" class="d-block w-100" alt="...">
+                </div>    
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/outbound2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/outbound3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>        
+      </div>
+  </div>  
+
+<!-- Header -->
+<header class="text-center py-5 mb-4">
+  <div class="container">
+    <hr />
+    <h1 class="fw-light text-black-50">Outbound</h1>
+    <hr />
+  </div>
+</header>
+
+<div data-aos="fade-up" data-aos-duration="3000">
+  <!--outbound-->
+  <div class="container my-5">
+    <div class="row g-2">
+      <div class="col-6 p-4 pb-4 pe-lg-4 pt-lg-4 align-items-center rounded-3">
+        <div class="bg-transparent text-dark">
+          <h3 class="card-title">Outbound</h3>
+            <br>
+              <p>Selalu ada hal yang menyenangkan untuk dilakukan. Tidak hanya memberikan layanan kelas satu, tetapi kami juga menyediakan fasilitas outbond yang melimpah. 
+                Baik Anda sedang dalam pertemuan bisnis, liburan, atau sekadar staycation, Anda dapat merasakan aktivitas outbond yang dirancang dengan baik mulai dari membangun tim, flying fox (tergantung ketersediaan), panjat dinding, tali tinggi di taman petualangan baru kami, dan trekking alam.
+              </p>
+        </div>
+        <br>
+      </div>
+
+      <div class="col-6 p-4 pb-4 pe-lg-4 pt-lg-4 align-items-center rounded-3">
+        <div class="text-white">
+            <img src="img/outbound1.jpg" class="card-img" alt="...">
+        </div>
+        <br>
+        <div class="row g-2">
+          <div class="col-6 align-items-center rounded-3">
+            <div class="text-white">
+              <img src="img/outbound2.jpg" class="card-img zoom" alt="...">
+            </div>
+          </div>
+          <div class="col-6 align-items-center rounded-3">
+            <div class="text-white">
+              <img src="img/outbound3.jpg" class="card-img zoom" alt="...">
+            </div>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+    <hr />
+  </div>
+</div>
+
+          <!--footer-->
+    <footer class="container">
+        <footer class="py-5">
+        <div class="row">
+            <div class="col-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="destination.html" class="nav-link p-0 text-muted">Destination</a></li>
+                <li class="nav-item mb-2"><a href="specialoffer.html" class="nav-link p-0 text-muted">Special Offer</a></li>
+                <li class="nav-item mb-2"><a href="event.html" class="nav-link p-0 text-muted">Event</a></li>
+                <li class="nav-item mb-2"><a href="gallery.html" class="nav-link p-0 text-muted">Gallery</a></li>
+                <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+            </div>
+    
+            <div class="col-4">
+            <h5>Contact Us</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><p class="text-muted">Jl. Raya Lenteng Agung No.56-80, RT.1/RW.3, Srengseng Sawah, Jakarta, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12640</p></li>
+                <li class="nav-item mb-2"><p class="text-muted">Phone : 021-234567890</p></li>
+            </ul>
+            </div>
+    
+            <div class="col-4 offset-1">
+            <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p class="text-muted">receive our latest information and Special Offers</p>
+                <div class="d-flex w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-warning" type="button">Subscribe</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    
+        <div class="d-flex justify-content-between py-4 my-4 border-top">
+            <p>© 2021 Company, Inc. All rights reserved.</p>
+        </div>
+        </footer>
+    </footer> 
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script>
+      $(document).ready(function(){
+          $('.zoom').hover(function() {
+              $(this).addClass('transisi');
+          }, function() {
+              $(this).removeClass('transisi');
+          });
+      });  
+    </script>
+    <script>
+        AOS.init();
+
+        var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', function () {
+            myInput.focus()
+        })
+    </script>
+</html>
