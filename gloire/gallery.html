@@ -11,7 +11,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://getbootstrap.com/docs/5.1/components/navbar/" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <title>Gallery</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <title>Quart de` Gloire</title>
   </head>
   
   <body>
@@ -22,6 +23,7 @@
               <img src="img/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
               Quart de` Gloire
             </a>
+            <right>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -45,7 +47,7 @@
                                 <form>
                                     <div class="mb-3">
                                         <label class="form-label">Email Address</label>
-                                        <input type="text" class="form-control" id="username" name="address" placeholder="Username" />
+                                        <input type="email" class="form-control" id="username" name="address" placeholder="Username" />
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label">Password</label>
@@ -130,10 +132,7 @@
                 </li>
               </ul>
             </div>
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-warning text-light" type="submit">Search</button>
-              </form>
+          </right>
           </div>
         </nav>
   
@@ -147,34 +146,107 @@
 </header>
 
 <!-- Page Content -->
-    <main class="container p-md-5 p-2">
+    <main class="container">
         <div class="row g-2 g-md-4">
             <div class="col-6 col-md-3">
-                <img class="w-100" class="image" src="img/gallery1.jpg" alt="view hotel">
-                <div class="overlaygallery">
-                  <div class="textgallery">Hello World</div>
+              <div class="content">
+                <div class="content-overlay"></div>
+                  <img class="w-100" src="img/gallery1.jpg" alt="view hotel">
+                <div class="content-details fadeIn-bottom">
+                  <h3>Kamar yang Bersih dan Nyaman</h3>
+                  <p>kamar hotel yang bersih mulai dari lantai hingga langit-langit.</p>
                 </div>
+              </div>
             </div>
             <div class="col-6 col-md-3">
-                <img class="w-100" src="img/gallery2.jpg" alt="view hotel">
+              <div class="content">
+                <div class="content-overlay"></div>
+                  <img class="w-100" src="img/gallery2.jpg" alt="view hotel">
+                <div class="content-details fadeIn-bottom">
+                  <h3>Lobby</h3>
+                  <p>Menjadi pintu masuk yang digunakan untuk menyambut dan mengarahkan tamu atau pengunjung. </p>
+                </div>
+              </div>
             </div>
             <div class="col-6 col-md-3">
-                <img class="w-100" src="img/gallery3.jpg" alt="view hotel">
+              <div class="content">
+                <div class="content-overlay"></div>
+                  <img class="w-100" src="img/gallery3.jpg" alt="view hotel">
+                <div class="content-details fadeIn-bottom">
+                  <h3>Kolam Renang</h3>
+                  <p>Menawarkan fasilitas kolam renang infinity, ada yang indoor, ada pula yang outdoor.</p>
+                </div>
+              </div>
             </div>
             <div class="col-6 col-md-3">
-                <img class="w-100" src="img/gallery4.jpg" alt="view hotel">
+              <div class="content">
+                <div class="content-overlay"></div>
+                  <img class="w-100" src="img/gallery4.jpg" alt="view hotel">
+                <div class="content-details fadeIn-bottom">
+                  <h3>Ruang Tamu</h3>
+                  <p>Bosan di dalam kamar? Ruang tamu hotel merupakan fasilitas yang menjadi tempat berkumpul para tamu.</p>
+                </div>
+              </div>
             </div>
             <div class="col-6 col-md-3">
-                <img class="w-100" src="img/gallery5.jpg" alt="view hotel">
+              <div class="content">
+                <div class="content-overlay"></div>
+                  <img class="w-100" src="img/gallery5.jpg" alt="view hotel">
+                <div class="content-details fadeIn-bottom">
+                  <h3>Restoran</h3>
+                  <p>Memiliki menu makanan/minuman andalan yang bisa memberikan sensasi tersendiri bagi tamu.</p>
+                </div>
+              </div>
             </div>
             <div class="col-6 col-md-3">
-                <img class="w-100" src="img/gallery6.jpg" alt="view hotel">
+              <div class="content">
+                <div class="content-overlay"></div>
+                  <img class="w-100" src="img/gallery6.jpg" alt="view hotel">
+                <div class="content-details fadeIn-bottom">
+                  <h3>Saluran TV Premium</h3>
+                  <p>Menyediakan saluran TV lokal tetapi juga saluran TV internasional.</p>
+                </div>
+              </div>
             </div>
             <div class="col-6 col-md-3">
-                <img class="w-100" src="img/gallery7.jpg" alt="view hotel">
+              <div class="content">
+                <div class="content-overlay"></div>
+                  <img class="w-100" src="img/gallery7.jpg" alt="view hotel">
+                <div class="content-details fadeIn-bottom">
+                  <h3>Area bebas rokok</h3>
+                  <p>Menyediakan area khusus untuk mereka yang mau merokok.</p>
+                </div>
+              </div>
             </div>
             <div class="col-6 col-md-3">
-                <img class="w-100" src="img/gallery8.jpg" alt="view hotel">
+              <div class="content">
+                <div class="content-overlay"></div>
+                  <img class="w-100" src="img/gallery8.jpg" alt="view hotel">
+                <div class="content-details fadeIn-bottom">
+                  <h3>Ruangan Serbaguna</h3>
+                  <p>Tidak hanya digunakan sebagai ruangan rapat, ruangan serbaguna juga dapat dijadikan tempat acara atau event perusahaan.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="content">
+                <div class="content-overlay"></div>
+                  <img class="w-100" src="img/gallery9.jpg" alt="view hotel">
+                <div class="content-details fadeIn-bottom">
+                  <h3>Bathup</h3>
+                  <p>Berendam air hangat sembari menyantap makanan kecil dan menikmati alunan musik adalah aktivitas yang sangat menyegarkan.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="content">
+                <div class="content-overlay"></div>
+                  <img class="w-100" src="img/gallery10.png" alt="view hotel">
+                <div class="content-details fadeIn-bottom">
+                  <h3>Pusat kebugaran</h3>
+                  <p>Fitness center berguna bagi tamu yang hendak melakukan aktivitas fisik maupun olah raga. </p>
+                </div>
+              </div>
             </div>
         </div>
         <br>
@@ -185,7 +257,7 @@
       <footer class="container">
         <footer class="py-5">
           <div class="row">
-            <div class="col-3">
+            <div class="col-2">
               <h5>Section</h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
@@ -197,7 +269,7 @@
               </ul>
             </div>
       
-            <div class="col-4">
+            <div class="col-5">
               <h5>Contact Us</h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2"><p class="text-muted">Jl. Raya Lenteng Agung No.56-80, RT.1/RW.3, Srengseng Sawah, Jakarta, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12640</p></li>
@@ -205,13 +277,13 @@
               </ul>
             </div>
       
-            <div class="col-4 offset-1">
+            <div class="col-5">
               <form>
                 <h5>Subscribe to our newsletter</h5>
                 <p class="text-muted">receive our latest information and Special Offers</p>
                 <div class="d-flex w-100 gap-2">
                   <label for="newsletter1" class="visually-hidden">Email address</label>
-                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
                   <button class="btn btn-warning" type="button">Subscribe</button>
                 </div>
               </form>
@@ -219,7 +291,7 @@
           </div>
       
           <div class="d-flex justify-content-between py-4 my-4 border-top">
-            <p>© 2021 Company, Inc. All rights reserved.</p>
+            <p>© 2021 Quart de' Gloire. All rights reserved.</p>
           </div>
         </footer>
       </footer> 
